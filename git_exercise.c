@@ -4,16 +4,16 @@ int main(void)
 {
 	int in;
 	
-	printf("input number 1\n");
+	printf("input number 2\n");
 	scanf("%d", &in);
 	
-	if(in == 1)
+	if(in == 2)
 	{
-		printf("my name is 'Seong Hak Jung'");
+		printf("My name is 'Seong Hak Jung'\nI'm 23 years old'");
 	}
 	else
 	{
-		printf("number isn't 1");
+		printf("number isn't 2");
 	}
 	return 0;
 }
