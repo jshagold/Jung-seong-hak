@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hi</title>
+    <link rel="import" href="../bower_components/polymer/polymer.html">
+    <link rel="import" href="shared-styles.html">
+    <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+</head>
+
+
+<dom-module id="my-main">
+
+
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                background: skyblue;
+                padding: 10px;
+                margin: auto;
+            }
+            .circle:hover {
+                background-color: #ee40ff;
+            }
+        </style>
+
+
+        <div class="card">
+            <a href="http://localhost:8080/my-memo"><div class="circle">메모</div></a>
+            <h1>메모MEMO</h1>
+        </div>
+
+        <div class="card">
+            <a href="http://localhost:8080/my-chat"><div class="circle">채팅</div></a>
+            <h1>채팅CHAT</h1>
+        </div>
+
+        <div class="card">
+            <a href="https://calendar.google.com/calendar"><div class="circle">달력</div></a>
+            <h1>달력CALENDAR</h1>
+        </div>
+
+        <div class="card">
+            <a href="http://localhost:8080/my-option"><div class="circle">설정</div></a>
+            <h1>설정OPTION</h1>
+        </div>
+
+
+    </template>
+
+
+  <script>
+    Polymer({
+      is: 'my-main',
+    });
+  </script>
+</dom-module>
+
+
+</html>
