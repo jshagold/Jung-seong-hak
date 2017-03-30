@@ -9,7 +9,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
-<link rel="import" href="../bower_components/medium-editor-element/medium-editor-element.html">
 <link rel="import" href="shared-styles.html">
 
 <dom-module id="my-memo">
@@ -34,10 +33,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="card">
       <h1>메모MEMO</h1>
 
-      <medium-editor id="noteEditor"></medium-editor>
+      <form action="/action_page.php">
+        <textarea placeholder="작성하세요~"></textarea>
+      </form>
 
-      <a href="/"><img src="button_back.png" title="뒤로가기" align="right"></a>
+      <button type="button" onclick="alert('저장 되었습니다.')">저장하기</button>
+      <button type="reset">초기화</button>
+
+      <a href="/"><img src="icon_back.png" title="뒤로가기" align="right"></a>
     </div>
+
+
   </template>
 
   <script>
