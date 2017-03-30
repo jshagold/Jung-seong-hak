@@ -1,0 +1,28 @@
+
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-option">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      <div class="circle">설정</div>
+      <h1>Option</h1>
+      <a href="/"><img src="button_back.png" title="뒤로가기" align="right"></a>
+      </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-option',
+    });
+  </script>
+</dom-module>

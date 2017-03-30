@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hi</title>
+    <link rel="import" href="../bower_components/polymer/polymer.html">
+    <link rel="import" href="shared-styles.html">
+    <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+    <link rel="import" href="../bower_components/paper-button/paper-button.html">
+</head>
+
+
+<dom-module id="my-main">
+
+
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                padding: 10px;
+            }
+
+            .circle:hover {
+                background-color: #ee40ff;
+            }
+
+            .card {
+                display: inline-block;
+                width: 10%;
+                margin: 0.5%;
+                padding: 2%;
+                color: #757575;
+                border-radius: 5px;
+                background-color: #fffff0;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+
+
+        <div class="card">
+            <a href="http://localhost:8080/my-memo"><div class="circle">메모</div></a>
+            <p>메모를 할수있습니다.</p>
+        </div>
+
+        <div class="card">
+            <a href="http://localhost:8080/my-chat"><div class="circle">채팅</div></a>
+            <p>채팅을 할수있습니다.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://calendar.google.com/calendar"><div class="circle">구글캘린더</div></a>
+            <p>구글캘린더로 이동합니다.</p>
+        </div>
+
+        <div class="card">
+            <a href="http://localhost:8080/my-option"><div class="circle">설정</div></a>
+            <p>설정을 변경할수있습니다.</p>
+        </div>
+
+
+    </template>
+
+
+  <script>
+    Polymer({
+      is: 'my-main',
+    });
+  </script>
+</dom-module>
+
+
+</html>
