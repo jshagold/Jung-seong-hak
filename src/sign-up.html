@@ -1,0 +1,56 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="sign-up">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+      .button {
+        display: block;
+        border-radius: 4px;
+        background-color: dodgerblue;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 15px;
+        padding: 0.5%;
+        width: 15%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 1%;
+        box-sizing: border-box
+       }
+
+    </style>
+
+    <div class="card">
+      <h1>회원가입</h1>
+
+      <form>
+        아이디:<br>
+        <input type="text" name="userid">
+        <button class="button">중복확인</button>
+        비밀번호:<br>
+        <input type="text" name="psw">
+        <br>
+        비밀번호 확인:<br>
+        <input type="text" name="pswcheck">
+        <br><br>
+      </form>
+
+      <a href="/" class="button" onclick="alert('가입되었습니다')">가입</a>
+
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'sign-up',
+    });
+  </script>
+</dom-module>
