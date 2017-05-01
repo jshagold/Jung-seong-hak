@@ -16,4 +16,7 @@
 
 ## (4)
 ![](https://github.com/jshagold/Jung-seong-hak/blob/master/%EC%84%A4%EC%A0%95.PNG)
+설정 버튼을 누르면 설정 화면으로 이동한다.
+
+##(5)
 구글캘린더 버튼을 누르면 구글캘린더로 이동한다.
